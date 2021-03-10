@@ -76,8 +76,7 @@ jobs:
           browser: chrome
           record: true
           parallel: true
-          group: "UI - Chrome"
-          spec: cypress/integration/*
+          group: "UI"
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
