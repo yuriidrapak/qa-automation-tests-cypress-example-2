@@ -70,7 +70,7 @@ jobs:
         with:
           # we have already installed all dependencies above
           install: false
-          start: npm run e2e:record:chrome
+          start: npm run cypress:record:chrome
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
