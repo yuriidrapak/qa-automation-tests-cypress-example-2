@@ -10,8 +10,6 @@
         "cypress:info": "cypress info",
         "cypress:open": "cypress open",
         "cypress:record:chrome": "cypress run --record --key f17a4bff-76c3-4852-ad3d-a6410788b2d0 --browser chrome",
-        "cypress:record:edge": "cypress run --record --browser edge",
-        "cypress:record:parallel": "cypress run --record --parallel",
         "cypress:record": "cypress run --record --key f17a4bff-76c3-4852-ad3d-a6410788b2d0",
         "cypress:run:record": "cypress run --record --key f17a4bff-76c3-4852-ad3d-a6410788b2d0",
         "cypress:run": "cypress run",
