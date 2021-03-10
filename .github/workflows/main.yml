@@ -28,13 +28,11 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           runTests: false
-      # report machine parameters
-      - run: npm ci
+    # report machine parameters
     # check Cypress binary path and cached versions
     # useful to make sure we are not carrying around old versions
       - run: npx cypress cache path
       - run: npx cypress cache list
-      - run: $(npm bin)/print-env CI
       - run: npm run cypress:verify
       - run: npm run cypress:info
 
