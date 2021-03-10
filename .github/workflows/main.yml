@@ -70,13 +70,14 @@ jobs:
         with:
           # we have already installed all dependencies above
           install: false
-          start: cypress:record:chrome
+          start: npm run cypress:record:chrome
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
           record: true
           parallel: true
           group: "UI"
+          spec: cypress/integration/*
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
